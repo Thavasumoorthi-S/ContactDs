@@ -8,7 +8,6 @@ public class Contact
 
     Node rootNode=null;
     int count=0;
-    Node middnode=null;
 
     class Node
     {
@@ -46,7 +45,6 @@ public class Contact
             temp1=temp1.nextNode;
             temp2=temp2.nextNode;
         }
-        System.out.println(temp1.name);
         temp1.nextNode=null;
         logger.info("Successfully Removed the element");
     }
@@ -87,7 +85,6 @@ public class Contact
         Contact list = new Contact();
         Scanner sc=new Scanner(System.in);
         Logger logger=Logger.getLogger("com.api.jar");
-        int index=0;
         int choice;
         String name;
         long number;
@@ -105,7 +102,6 @@ public class Contact
                 number=sc.nextLong();
                 System.out.println("Enter the email ");
                 email=sc.next();
-                index++;
                 list.addcontact(name,number,email);
             }
             else if(choice==2)
@@ -114,7 +110,7 @@ public class Contact
             }
             else if(choice==3)
             {
-                System.out.println("Enter the searching contact name ");
+                logger.info("Enter the searching contact name ");
                 name=sc.next();
                 list.searchcontact(name);
 
