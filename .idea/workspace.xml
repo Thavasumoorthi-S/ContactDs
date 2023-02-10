@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1d1e123-8612-4909-975a-f8b2a8f2d967" name="Changes" comment="First commit">
+    <list default="true" id="e1d1e123-8612-4909-975a-f8b2a8f2d967" name="Changes" comment="First commit 2">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Contact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +69,26 @@
       <option name="project" value="LOCAL" />
       <updated>1676002529230</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First commit 2">
+      <created>1676003052113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676003052113</updated>
+    </task>
+    <task id="LOCAL-00005" summary="First commit 2">
+      <created>1676003291498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676003291498</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="First commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit 2" />
   </component>
 </project>

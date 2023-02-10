@@ -57,7 +57,7 @@ public class Contact
         } else {
             while (temp != null) {
                 logger.info(temp.name);
-                logger.info(""+temp.number);
+                logger.log(Level.INFO,Long.toString(temp.number),+temp.number);
                 logger.info(temp.email);
                 temp = temp.nextNode;
             }
