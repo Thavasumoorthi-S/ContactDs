@@ -72,9 +72,9 @@ public class Contact
             if(temps.name.equals(name))
             {
                 logger.info("This contact is available details follow ");
-                logger.info("NAME :"+temps.name);
+                logger.log(Level.INFO,temps.name);
                 logger.log(Level.INFO,Long.toString(temps.number),+temps.number);
-                logger.info("EMAIL ID :"+temps.email);
+                logger.log(Level.INFO,temps.email);
                 break;
             }
             else {
