@@ -9,7 +9,7 @@ public class Contact
     Node rootNode=null;
     int count=0;
 
-    class Node
+    static class Node
     {
         String name;
         long number;
