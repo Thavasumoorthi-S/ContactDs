@@ -42,7 +42,7 @@ public class Contact
         Node temp2=this.rootNode.nextNode;
         if(temp1.nextNode==null)
         {
-            logger.info("only one contact is available ");;
+            logger.info("only one contact is available ");
         }
         else {
             while (temp2.nextNode != null) {
