@@ -73,7 +73,7 @@ public class Contact
             {
                 logger.info("This contact is available details follow ");
                 logger.info("NAME :"+temps.name);
-                logger.info("MOBILE NUMBER :"+temps.number);
+                logger.log(Level.INFO,Long.toString(temps.number),+temps.number);
                 logger.info("EMAIL ID :"+temps.email);
                 break;
             }
