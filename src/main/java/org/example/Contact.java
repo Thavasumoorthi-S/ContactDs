@@ -102,7 +102,7 @@ public class Contact
                 name=sc.next();
                 logger.info("Enter the mobile number");
                 number=sc.nextLong();
-                System.out.println("Enter the email ");
+                logger.info("Enter the email ");
                 email=sc.next();
                 list.addcontact(name,number,email);
             }
