@@ -56,7 +56,9 @@ public class Contact
             logger.info(" LinkedList Is empty!");
         } else {
             while (temp != null) {
-                logger.log(Level.INFO," "+temp.name+" "+temp.number+" "+temp.email);
+                logger.info(temp.name);
+                logger.info(""+temp.number);
+                logger.info(temp.email);
                 temp = temp.nextNode;
             }
 
