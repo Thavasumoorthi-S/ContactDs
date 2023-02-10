@@ -35,18 +35,24 @@ public class Contact
             temp.nextNode = new Node(name,number,email);
             this.count++;
         }
-        logger.info("successfully Element added ");
+        logger.info("successfully Contact details added ");
     }
     public void removecontact(){
         Node temp1 = this.rootNode;
         Node temp2=this.rootNode.nextNode;
-        while(temp2.nextNode!=null)
+        if(temp1.nextNode==null)
         {
-            temp1=temp1.nextNode;
-            temp2=temp2.nextNode;
+            logger.info("only one contact is available ");;
         }
-        temp1.nextNode=null;
-        logger.info("Successfully Removed the element");
+        else {
+            while (temp2.nextNode != null) {
+                temp1 = temp1.nextNode;
+                temp2 = temp2.nextNode;
+            }
+
+            temp1.nextNode = null;
+            logger.info("Successfully Removed the contact details");
+        }
     }
 
     public void display() {
@@ -71,7 +77,7 @@ public class Contact
         {
             if(temps.name.equals(name))
             {
-                logger.info("This contact is available details follow ");
+                logger.info("contact person details");
                 logger.log(Level.INFO,temps.name);
                 logger.log(Level.INFO,Long.toString(temps.number),+temps.number);
                 logger.log(Level.INFO,temps.email);
@@ -80,6 +86,13 @@ public class Contact
             else {
                 temps=temps.nextNode;
             }
+        }
+        if(temps.nextNode==null &&temps.name.equals(name))
+        {
+            logger.info("contact person details");
+            logger.log(Level.INFO,temps.name);
+            logger.log(Level.INFO,Long.toString(temps.number),+temps.number);
+            logger.log(Level.INFO,temps.email);
         }
     }
     public static void main(String[] args)
@@ -93,7 +106,7 @@ public class Contact
         String email;
         while(true)
         {
-            logger.info("\n1)add the Contact \n2)remove the contact \n3) search the contact person \n4)display contact details  \n5)exit");
+            logger.info("\n1)ADD CONTACT \n2)REMOVE CONTACT \n3) SEARCH CONTACT PERSON \n4)DISPLAY CONTACT DETAILS  \n5)EXIT");
             logger.info("Choose any one of the option in the above: ");
             choice=sc.nextInt();
             if(choice==1)
