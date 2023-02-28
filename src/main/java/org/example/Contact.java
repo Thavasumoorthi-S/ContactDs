@@ -8,21 +8,6 @@ public class Contact
 
     Node rootNode=null;
     int count=0;
-
-    static class Node
-    {
-        String name;
-        long number;
-        String email;
-        Node nextNode;
-
-        Node(String name,long number,String email)
-        {
-            this.name=name;
-            this.number=number;
-            this.email=email;
-        }
-    }
     public void addcontact(String name,long number,String email){
         if(this.rootNode == null){
             this.rootNode= new Node(name,number, email);
